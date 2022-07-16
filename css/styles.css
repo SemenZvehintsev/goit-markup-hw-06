@@ -536,16 +536,17 @@ p {
 .footer .container {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
 }
 
 .left-footer {
     display: flex;
     gap: 70px;
+    align-items: baseline;
 }
 
 .footer .secondary-header {
     color: var(--white-text-color);
-    padding-top: 12px;
     margin-bottom: 20px;
 }
 
@@ -949,10 +950,6 @@ p {
 }
 
 .terms-icon {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translate(50%, -50%);
     color: var(--white-text-color);
     background-color: transparent;
     fill: currentColor;
@@ -963,7 +960,6 @@ p {
 
 
 .label-terms {
-    position: relative;
     display: flex;
     margin-left: 14px;
     margin-bottom: 30px;
@@ -977,11 +973,15 @@ p {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    margin-left: 23px;
+    margin-left: 8px;
 }
 
 .input-terms:checked + .terms-icon {
     color: var(--white-text-color);
     background-color: var(--alternative-text-color);
     border: 0;
+}
+
+.terms-link {
+    color: var(--alternative-text-color);
 }
